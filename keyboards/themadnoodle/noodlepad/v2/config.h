@@ -33,14 +33,23 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Noodlepad V2 PCB default pin-out */
 #define MATRIX_ROW_PINS { F1, D6, D7 }
 #define MATRIX_COL_PINS { F0, B5, B6 }
-#define UNUSED_PINS
 
 /* RGB BackLight */
 #define RGB_DI_PIN B7
 #define RGBLED_NUM 4
 #define RGBLIGHT_SLEEP
-#define RGBLIGHT_ANIMATIONS
+#define RGBLIGHT_EFFECT_ALTERNATING
+#define RGBLIGHT_EFFECT_BREATHING
+#define RGBLIGHT_EFFECT_CHRISTMAS
+#define RGBLIGHT_EFFECT_KNIGHT
+#define RGBLIGHT_EFFECT_RAINBOW_MOOD
+#define RGBLIGHT_EFFECT_RAINBOW_SWIRL
+#define RGBLIGHT_EFFECT_RGB_TEST
+#define RGBLIGHT_EFFECT_SNAKE
+#define RGBLIGHT_EFFECT_STATIC_GRADIENT
+#define RGBLIGHT_EFFECT_TWINKL
 #define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_RAINBOW_SWIRL
+
 
 /*Encoders */
 #define ENCODERS_PAD_A { D0 }
@@ -49,5 +58,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION ROW2COL
-#define VIAL_KEYBOARD_UID {0x88, 0x4A, 0xC0, 0x39, 0xFA, 0x95, 0x2B, 0x21}
 
