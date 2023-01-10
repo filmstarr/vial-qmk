@@ -19,6 +19,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "config_common.h"
 
+/* USB Device descriptor parameter */
+#define VENDOR_ID       0xFEED
+#define PRODUCT_ID      0x1701
+#define DEVICE_VER      0x0001
+#define MANUFACTURER    The Mad Noodle
+#define PRODUCT         Noodle Pad v1
+
 /* key matrix size */
 #define MATRIX_ROWS 3
 #define MATRIX_COLS 3
@@ -26,6 +33,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* NCC-1701-KB PCB default pin-out */
 #define MATRIX_ROW_PINS { D4, D6, D7 }
 #define MATRIX_COL_PINS { B4, B5, B6 }
+#define UNUSED_PINS
 
 /* RGB BackLight */
 #define RGB_DI_PIN B7
@@ -39,3 +47,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION ROW2COL
+#define VIAL_KEYBOARD_UID {0x7B, 0xD4, 0x2D, 0x7E, 0x21, 0x0A, 0x0F, 0xF2}
